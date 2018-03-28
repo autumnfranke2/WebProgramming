@@ -9,12 +9,24 @@
 		</style>
     </head>
     <body>
+    <H3 id="out"></H3>
 	<script>
 	var choice = prompt("Which do you choose? 1, 2, or 3?")
 	
-	// write your code here
+	if (choice == "1"){
+		document.write("You Choose: Bulbasaur")
+		document.getElementById("out").innerHTML='<img src="bulbasaur.png">';
+	}
+	if (choice == "2"){
+		document.write("You Choose: Squirtle")
+		document.getElementById("out").innerHTML='<img src="squirtle.png">';
+	}
+	if (choice == "3"){
+		document.write("You Choose: Charmander")
+		document.getElementById("out").innerHTML='<img src="charmander.png">';
+	}
 	
-	// document.getElementById("out").innerHTML="put your text here";
+	
 	</script>
 	<h1> CHOOSE YOUR STARTER </h1>
         <div>
@@ -23,6 +35,6 @@
 			3)<img src="charmander.png">
 		</div>
 	<br />
-	<H3 id="out"></H3>
+	
     </body>
 </html>
