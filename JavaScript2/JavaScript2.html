@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title> A Basic Web Page</title>
+    </head>
+    <body>
+    <script>
+
+    	var input = prompt("enter a phrase");
+    	var x = input.length
+
+        function reverseString(str){
+            return str.split("").reverse().join("");
+        
+        }
+
+        function ispalendrome(origional, reverse){
+            if (origional == reverse){
+                return ("is a palendrome")
+            }
+            else{
+                return("is not a palendrome")
+            }
+        }
+
+        reversed = reverseString(input);
+        palendrome = ispalendrome(input, reversed)
+
+    	document.write("legnth:", x);
+        document.write("<br>");
+        document.write("your input: ", input);
+        document.write("<br>");
+        document.write("the reverse of your input: ", reversed);
+        document.write("<br>");
+        document.write(palendrome);
+
+        
+	</script>      
+    </body>
+</html>
