@@ -16,16 +16,28 @@
 	if (choice == "1"){
 		document.write("You Choose: Bulbasaur")
 		document.getElementById("out").innerHTML='<img src="bulbasaur.png">';
+		document.getElementById("squirtletext").style.visibility = "hidden"
+		document.getElementById("chartext").style.visibility = "hidden"
+		document.getElementById("bulbtext").style.visibility = "visible"
+		
+
 	}
 	if (choice == "2"){
 		document.write("You Choose: Squirtle")
 		document.getElementById("out").innerHTML='<img src="squirtle.png">';
+		document.getElementById("bulbtext").style.visibility = "hidden"
+		document.getElementById("chartext").style.visibility = "hidden"
+		document.getElementById("squirtletext").style.visibility = "visible"
+		
 	}
 	if (choice == "3"){
 		document.write("You Choose: Charmander")
 		document.getElementById("out").innerHTML='<img src="charmander.png">';
+		document.getElementById("bulbtext").style.visibility = "hidden"
+		document.getElementById("squirtletext").style.visibility = "hidden"
+		document.getElementById("chartext").style.visibility = "visible"
+		
 	}
-	
 	
 	</script>
 	<h1> CHOOSE YOUR STARTER </h1>
@@ -34,6 +46,9 @@
 			2)<img src="squirtle.png">
 			3)<img src="charmander.png">
 		</div>
+	<div id='bulbtext'>Bulbasaur is a grass-type</div>
+	<div id='squirtletext'>Squirtle is a water-type</div>
+	<div id='chartext'>Charmander is a fire-type</div>
 	<br />
 	
     </body>
